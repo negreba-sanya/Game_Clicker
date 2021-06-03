@@ -289,23 +289,23 @@ namespace Game_Clicker {
             
             private global::System.Data.DataColumn columnLimon;
             
-            private global::System.Data.DataColumn _columnLimon_auto;
+            private global::System.Data.DataColumn columnLimonauto;
             
             private global::System.Data.DataColumn columnNews;
             
-            private global::System.Data.DataColumn _columnNews_auto;
+            private global::System.Data.DataColumn columnNewsauto;
             
             private global::System.Data.DataColumn columnCar;
             
-            private global::System.Data.DataColumn _columnCar_auto;
+            private global::System.Data.DataColumn columnCarauto;
             
             private global::System.Data.DataColumn columnPizza;
             
-            private global::System.Data.DataColumn _columnPizza_auto;
+            private global::System.Data.DataColumn columnPizzaauto;
             
             private global::System.Data.DataColumn columnPonchik;
             
-            private global::System.Data.DataColumn _columnPonchik_auto;
+            private global::System.Data.DataColumn columnPonchikauto;
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
@@ -382,9 +382,9 @@ namespace Game_Clicker {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public global::System.Data.DataColumn _Limon_autoColumn {
+            public global::System.Data.DataColumn LimonautoColumn {
                 get {
-                    return this._columnLimon_auto;
+                    return this.columnLimonauto;
                 }
             }
             
@@ -398,9 +398,9 @@ namespace Game_Clicker {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public global::System.Data.DataColumn _News_autoColumn {
+            public global::System.Data.DataColumn NewsautoColumn {
                 get {
-                    return this._columnNews_auto;
+                    return this.columnNewsauto;
                 }
             }
             
@@ -414,9 +414,9 @@ namespace Game_Clicker {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public global::System.Data.DataColumn _Car_autoColumn {
+            public global::System.Data.DataColumn CarautoColumn {
                 get {
-                    return this._columnCar_auto;
+                    return this.columnCarauto;
                 }
             }
             
@@ -430,9 +430,9 @@ namespace Game_Clicker {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public global::System.Data.DataColumn _Pizza_autoColumn {
+            public global::System.Data.DataColumn PizzaautoColumn {
                 get {
-                    return this._columnPizza_auto;
+                    return this.columnPizzaauto;
                 }
             }
             
@@ -446,9 +446,9 @@ namespace Game_Clicker {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public global::System.Data.DataColumn _Ponchik_autoColumn {
+            public global::System.Data.DataColumn PonchikautoColumn {
                 get {
-                    return this._columnPonchik_auto;
+                    return this.columnPonchikauto;
                 }
             }
             
@@ -489,7 +489,7 @@ namespace Game_Clicker {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public TableRow AddTableRow(string User_Name, string Password, int Balance, int Limon, int _Limon_auto, int News, int _News_auto, int Car, int _Car_auto, int Pizza, int _Pizza_auto, int Ponchik, int _Ponchik_auto) {
+            public TableRow AddTableRow(string User_Name, string Password, int Balance, int Limon, int Limonauto, int News, int Newsauto, int Car, int Carauto, int Pizza, int Pizzaauto, int Ponchik, int Ponchikauto) {
                 TableRow rowTableRow = ((TableRow)(this.NewRow()));
                 object[] columnValuesArray = new object[] {
                         null,
@@ -497,15 +497,15 @@ namespace Game_Clicker {
                         Password,
                         Balance,
                         Limon,
-                        _Limon_auto,
+                        Limonauto,
                         News,
-                        _News_auto,
+                        Newsauto,
                         Car,
-                        _Car_auto,
+                        Carauto,
                         Pizza,
-                        _Pizza_auto,
+                        Pizzaauto,
                         Ponchik,
-                        _Ponchik_auto};
+                        Ponchikauto};
                 rowTableRow.ItemArray = columnValuesArray;
                 this.Rows.Add(rowTableRow);
                 return rowTableRow;
@@ -540,15 +540,15 @@ namespace Game_Clicker {
                 this.columnPassword = base.Columns["Password"];
                 this.columnBalance = base.Columns["Balance"];
                 this.columnLimon = base.Columns["Limon"];
-                this._columnLimon_auto = base.Columns["Limon-auto"];
+                this.columnLimonauto = base.Columns["Limonauto"];
                 this.columnNews = base.Columns["News"];
-                this._columnNews_auto = base.Columns["News-auto"];
+                this.columnNewsauto = base.Columns["Newsauto"];
                 this.columnCar = base.Columns["Car"];
-                this._columnCar_auto = base.Columns["Car-auto"];
+                this.columnCarauto = base.Columns["Carauto"];
                 this.columnPizza = base.Columns["Pizza"];
-                this._columnPizza_auto = base.Columns["Pizza-auto"];
+                this.columnPizzaauto = base.Columns["Pizzaauto"];
                 this.columnPonchik = base.Columns["Ponchik"];
-                this._columnPonchik_auto = base.Columns["Ponchik-auto"];
+                this.columnPonchikauto = base.Columns["Ponchikauto"];
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -564,34 +564,24 @@ namespace Game_Clicker {
                 base.Columns.Add(this.columnBalance);
                 this.columnLimon = new global::System.Data.DataColumn("Limon", typeof(int), null, global::System.Data.MappingType.Element);
                 base.Columns.Add(this.columnLimon);
-                this._columnLimon_auto = new global::System.Data.DataColumn("Limon-auto", typeof(int), null, global::System.Data.MappingType.Element);
-                this._columnLimon_auto.ExtendedProperties.Add("Generator_ColumnVarNameInTable", "_columnLimon_auto");
-                this._columnLimon_auto.ExtendedProperties.Add("Generator_UserColumnName", "Limon-auto");
-                base.Columns.Add(this._columnLimon_auto);
+                this.columnLimonauto = new global::System.Data.DataColumn("Limonauto", typeof(int), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnLimonauto);
                 this.columnNews = new global::System.Data.DataColumn("News", typeof(int), null, global::System.Data.MappingType.Element);
                 base.Columns.Add(this.columnNews);
-                this._columnNews_auto = new global::System.Data.DataColumn("News-auto", typeof(int), null, global::System.Data.MappingType.Element);
-                this._columnNews_auto.ExtendedProperties.Add("Generator_ColumnVarNameInTable", "_columnNews_auto");
-                this._columnNews_auto.ExtendedProperties.Add("Generator_UserColumnName", "News-auto");
-                base.Columns.Add(this._columnNews_auto);
+                this.columnNewsauto = new global::System.Data.DataColumn("Newsauto", typeof(int), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnNewsauto);
                 this.columnCar = new global::System.Data.DataColumn("Car", typeof(int), null, global::System.Data.MappingType.Element);
                 base.Columns.Add(this.columnCar);
-                this._columnCar_auto = new global::System.Data.DataColumn("Car-auto", typeof(int), null, global::System.Data.MappingType.Element);
-                this._columnCar_auto.ExtendedProperties.Add("Generator_ColumnVarNameInTable", "_columnCar_auto");
-                this._columnCar_auto.ExtendedProperties.Add("Generator_UserColumnName", "Car-auto");
-                base.Columns.Add(this._columnCar_auto);
+                this.columnCarauto = new global::System.Data.DataColumn("Carauto", typeof(int), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnCarauto);
                 this.columnPizza = new global::System.Data.DataColumn("Pizza", typeof(int), null, global::System.Data.MappingType.Element);
                 base.Columns.Add(this.columnPizza);
-                this._columnPizza_auto = new global::System.Data.DataColumn("Pizza-auto", typeof(int), null, global::System.Data.MappingType.Element);
-                this._columnPizza_auto.ExtendedProperties.Add("Generator_ColumnVarNameInTable", "_columnPizza_auto");
-                this._columnPizza_auto.ExtendedProperties.Add("Generator_UserColumnName", "Pizza-auto");
-                base.Columns.Add(this._columnPizza_auto);
+                this.columnPizzaauto = new global::System.Data.DataColumn("Pizzaauto", typeof(int), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnPizzaauto);
                 this.columnPonchik = new global::System.Data.DataColumn("Ponchik", typeof(int), null, global::System.Data.MappingType.Element);
                 base.Columns.Add(this.columnPonchik);
-                this._columnPonchik_auto = new global::System.Data.DataColumn("Ponchik-auto", typeof(int), null, global::System.Data.MappingType.Element);
-                this._columnPonchik_auto.ExtendedProperties.Add("Generator_ColumnVarNameInTable", "_columnPonchik_auto");
-                this._columnPonchik_auto.ExtendedProperties.Add("Generator_UserColumnName", "Ponchik-auto");
-                base.Columns.Add(this._columnPonchik_auto);
+                this.columnPonchikauto = new global::System.Data.DataColumn("Ponchikauto", typeof(int), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnPonchikauto);
                 this.Constraints.Add(new global::System.Data.UniqueConstraint("Constraint1", new global::System.Data.DataColumn[] {
                                 this.columnId}, true));
                 this.columnId.AutoIncrement = true;
@@ -826,17 +816,17 @@ namespace Game_Clicker {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public int _Limon_auto {
+            public int Limonauto {
                 get {
                     try {
-                        return ((int)(this[this.tableTable._Limon_autoColumn]));
+                        return ((int)(this[this.tableTable.LimonautoColumn]));
                     }
                     catch (global::System.InvalidCastException e) {
-                        throw new global::System.Data.StrongTypingException("Значение для столбца \'Limon-auto\' в таблице \'Table\' равно DBNull.", e);
+                        throw new global::System.Data.StrongTypingException("Значение для столбца \'Limonauto\' в таблице \'Table\' равно DBNull.", e);
                     }
                 }
                 set {
-                    this[this.tableTable._Limon_autoColumn] = value;
+                    this[this.tableTable.LimonautoColumn] = value;
                 }
             }
             
@@ -858,17 +848,17 @@ namespace Game_Clicker {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public int _News_auto {
+            public int Newsauto {
                 get {
                     try {
-                        return ((int)(this[this.tableTable._News_autoColumn]));
+                        return ((int)(this[this.tableTable.NewsautoColumn]));
                     }
                     catch (global::System.InvalidCastException e) {
-                        throw new global::System.Data.StrongTypingException("Значение для столбца \'News-auto\' в таблице \'Table\' равно DBNull.", e);
+                        throw new global::System.Data.StrongTypingException("Значение для столбца \'Newsauto\' в таблице \'Table\' равно DBNull.", e);
                     }
                 }
                 set {
-                    this[this.tableTable._News_autoColumn] = value;
+                    this[this.tableTable.NewsautoColumn] = value;
                 }
             }
             
@@ -890,17 +880,17 @@ namespace Game_Clicker {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public int _Car_auto {
+            public int Carauto {
                 get {
                     try {
-                        return ((int)(this[this.tableTable._Car_autoColumn]));
+                        return ((int)(this[this.tableTable.CarautoColumn]));
                     }
                     catch (global::System.InvalidCastException e) {
-                        throw new global::System.Data.StrongTypingException("Значение для столбца \'Car-auto\' в таблице \'Table\' равно DBNull.", e);
+                        throw new global::System.Data.StrongTypingException("Значение для столбца \'Carauto\' в таблице \'Table\' равно DBNull.", e);
                     }
                 }
                 set {
-                    this[this.tableTable._Car_autoColumn] = value;
+                    this[this.tableTable.CarautoColumn] = value;
                 }
             }
             
@@ -922,17 +912,17 @@ namespace Game_Clicker {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public int _Pizza_auto {
+            public int Pizzaauto {
                 get {
                     try {
-                        return ((int)(this[this.tableTable._Pizza_autoColumn]));
+                        return ((int)(this[this.tableTable.PizzaautoColumn]));
                     }
                     catch (global::System.InvalidCastException e) {
-                        throw new global::System.Data.StrongTypingException("Значение для столбца \'Pizza-auto\' в таблице \'Table\' равно DBNull.", e);
+                        throw new global::System.Data.StrongTypingException("Значение для столбца \'Pizzaauto\' в таблице \'Table\' равно DBNull.", e);
                     }
                 }
                 set {
-                    this[this.tableTable._Pizza_autoColumn] = value;
+                    this[this.tableTable.PizzaautoColumn] = value;
                 }
             }
             
@@ -954,17 +944,17 @@ namespace Game_Clicker {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public int _Ponchik_auto {
+            public int Ponchikauto {
                 get {
                     try {
-                        return ((int)(this[this.tableTable._Ponchik_autoColumn]));
+                        return ((int)(this[this.tableTable.PonchikautoColumn]));
                     }
                     catch (global::System.InvalidCastException e) {
-                        throw new global::System.Data.StrongTypingException("Значение для столбца \'Ponchik-auto\' в таблице \'Table\' равно DBNull.", e);
+                        throw new global::System.Data.StrongTypingException("Значение для столбца \'Ponchikauto\' в таблице \'Table\' равно DBNull.", e);
                     }
                 }
                 set {
-                    this[this.tableTable._Ponchik_autoColumn] = value;
+                    this[this.tableTable.PonchikautoColumn] = value;
                 }
             }
             
@@ -1018,14 +1008,14 @@ namespace Game_Clicker {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public bool Is_Limon_autoNull() {
-                return this.IsNull(this.tableTable._Limon_autoColumn);
+            public bool IsLimonautoNull() {
+                return this.IsNull(this.tableTable.LimonautoColumn);
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public void Set_Limon_autoNull() {
-                this[this.tableTable._Limon_autoColumn] = global::System.Convert.DBNull;
+            public void SetLimonautoNull() {
+                this[this.tableTable.LimonautoColumn] = global::System.Convert.DBNull;
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -1042,14 +1032,14 @@ namespace Game_Clicker {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public bool Is_News_autoNull() {
-                return this.IsNull(this.tableTable._News_autoColumn);
+            public bool IsNewsautoNull() {
+                return this.IsNull(this.tableTable.NewsautoColumn);
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public void Set_News_autoNull() {
-                this[this.tableTable._News_autoColumn] = global::System.Convert.DBNull;
+            public void SetNewsautoNull() {
+                this[this.tableTable.NewsautoColumn] = global::System.Convert.DBNull;
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -1066,14 +1056,14 @@ namespace Game_Clicker {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public bool Is_Car_autoNull() {
-                return this.IsNull(this.tableTable._Car_autoColumn);
+            public bool IsCarautoNull() {
+                return this.IsNull(this.tableTable.CarautoColumn);
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public void Set_Car_autoNull() {
-                this[this.tableTable._Car_autoColumn] = global::System.Convert.DBNull;
+            public void SetCarautoNull() {
+                this[this.tableTable.CarautoColumn] = global::System.Convert.DBNull;
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -1090,14 +1080,14 @@ namespace Game_Clicker {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public bool Is_Pizza_autoNull() {
-                return this.IsNull(this.tableTable._Pizza_autoColumn);
+            public bool IsPizzaautoNull() {
+                return this.IsNull(this.tableTable.PizzaautoColumn);
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public void Set_Pizza_autoNull() {
-                this[this.tableTable._Pizza_autoColumn] = global::System.Convert.DBNull;
+            public void SetPizzaautoNull() {
+                this[this.tableTable.PizzaautoColumn] = global::System.Convert.DBNull;
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -1114,14 +1104,14 @@ namespace Game_Clicker {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public bool Is_Ponchik_autoNull() {
-                return this.IsNull(this.tableTable._Ponchik_autoColumn);
+            public bool IsPonchikautoNull() {
+                return this.IsNull(this.tableTable.PonchikautoColumn);
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public void Set_Ponchik_autoNull() {
-                this[this.tableTable._Ponchik_autoColumn] = global::System.Convert.DBNull;
+            public void SetPonchikautoNull() {
+                this[this.tableTable.PonchikautoColumn] = global::System.Convert.DBNull;
             }
         }
         
@@ -1289,19 +1279,19 @@ namespace Game_Clicker.DatabaseDataSetTableAdapters {
             tableMapping.ColumnMappings.Add("Password", "Password");
             tableMapping.ColumnMappings.Add("Balance", "Balance");
             tableMapping.ColumnMappings.Add("Limon", "Limon");
-            tableMapping.ColumnMappings.Add("Limon-auto", "Limon-auto");
+            tableMapping.ColumnMappings.Add("Limonauto", "Limonauto");
             tableMapping.ColumnMappings.Add("News", "News");
-            tableMapping.ColumnMappings.Add("News-auto", "News-auto");
+            tableMapping.ColumnMappings.Add("Newsauto", "Newsauto");
             tableMapping.ColumnMappings.Add("Car", "Car");
-            tableMapping.ColumnMappings.Add("Car-auto", "Car-auto");
+            tableMapping.ColumnMappings.Add("Carauto", "Carauto");
             tableMapping.ColumnMappings.Add("Pizza", "Pizza");
-            tableMapping.ColumnMappings.Add("Pizza-auto", "Pizza-auto");
+            tableMapping.ColumnMappings.Add("Pizzaauto", "Pizzaauto");
             tableMapping.ColumnMappings.Add("Ponchik", "Ponchik");
-            tableMapping.ColumnMappings.Add("Ponchik-auto", "Ponchik-auto");
+            tableMapping.ColumnMappings.Add("Ponchikauto", "Ponchikauto");
             this._adapter.TableMappings.Add(tableMapping);
             this._adapter.DeleteCommand = new global::System.Data.SqlClient.SqlCommand();
             this._adapter.DeleteCommand.Connection = this.Connection;
-            this._adapter.DeleteCommand.CommandText = @"DELETE FROM [dbo].[Table] WHERE (([Id] = @Original_Id) AND ((@IsNull_User_Name = 1 AND [User_Name] IS NULL) OR ([User_Name] = @Original_User_Name)) AND ((@IsNull_Password = 1 AND [Password] IS NULL) OR ([Password] = @Original_Password)) AND ((@IsNull_Balance = 1 AND [Balance] IS NULL) OR ([Balance] = @Original_Balance)) AND ((@IsNull_Limon = 1 AND [Limon] IS NULL) OR ([Limon] = @Original_Limon)) AND ((@p3 = 1 AND [Limon-auto] IS NULL) OR ([Limon-auto] = @p2)) AND ((@IsNull_News = 1 AND [News] IS NULL) OR ([News] = @Original_News)) AND ((@p6 = 1 AND [News-auto] IS NULL) OR ([News-auto] = @p5)) AND ((@IsNull_Car = 1 AND [Car] IS NULL) OR ([Car] = @Original_Car)) AND ((@p9 = 1 AND [Car-auto] IS NULL) OR ([Car-auto] = @p8)) AND ((@IsNull_Pizza = 1 AND [Pizza] IS NULL) OR ([Pizza] = @Original_Pizza)) AND ((@p12 = 1 AND [Pizza-auto] IS NULL) OR ([Pizza-auto] = @p11)) AND ((@IsNull_Ponchik = 1 AND [Ponchik] IS NULL) OR ([Ponchik] = @Original_Ponchik)) AND ((@p15 = 1 AND [Ponchik-auto] IS NULL) OR ([Ponchik-auto] = @p14)))";
+            this._adapter.DeleteCommand.CommandText = @"DELETE FROM [dbo].[Table] WHERE (([Id] = @Original_Id) AND ((@IsNull_User_Name = 1 AND [User_Name] IS NULL) OR ([User_Name] = @Original_User_Name)) AND ((@IsNull_Password = 1 AND [Password] IS NULL) OR ([Password] = @Original_Password)) AND ((@IsNull_Balance = 1 AND [Balance] IS NULL) OR ([Balance] = @Original_Balance)) AND ((@IsNull_Limon = 1 AND [Limon] IS NULL) OR ([Limon] = @Original_Limon)) AND ((@IsNull_Limonauto = 1 AND [Limonauto] IS NULL) OR ([Limonauto] = @Original_Limonauto)) AND ((@IsNull_News = 1 AND [News] IS NULL) OR ([News] = @Original_News)) AND ((@IsNull_Newsauto = 1 AND [Newsauto] IS NULL) OR ([Newsauto] = @Original_Newsauto)) AND ((@IsNull_Car = 1 AND [Car] IS NULL) OR ([Car] = @Original_Car)) AND ((@IsNull_Carauto = 1 AND [Carauto] IS NULL) OR ([Carauto] = @Original_Carauto)) AND ((@IsNull_Pizza = 1 AND [Pizza] IS NULL) OR ([Pizza] = @Original_Pizza)) AND ((@IsNull_Pizzaauto = 1 AND [Pizzaauto] IS NULL) OR ([Pizzaauto] = @Original_Pizzaauto)) AND ((@IsNull_Ponchik = 1 AND [Ponchik] IS NULL) OR ([Ponchik] = @Original_Ponchik)) AND ((@IsNull_Ponchikauto = 1 AND [Ponchikauto] IS NULL) OR ([Ponchikauto] = @Original_Ponchikauto)))";
             this._adapter.DeleteCommand.CommandType = global::System.Data.CommandType.Text;
             this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_Id", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Id", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
             this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@IsNull_User_Name", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "User_Name", global::System.Data.DataRowVersion.Original, true, null, "", "", ""));
@@ -1312,60 +1302,79 @@ namespace Game_Clicker.DatabaseDataSetTableAdapters {
             this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_Balance", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Balance", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
             this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@IsNull_Limon", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Limon", global::System.Data.DataRowVersion.Original, true, null, "", "", ""));
             this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_Limon", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Limon", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
-            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@p3", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Limon-auto", global::System.Data.DataRowVersion.Original, true, null, "", "", ""));
-            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@p2", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Limon-auto", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
+            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@IsNull_Limonauto", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Limonauto", global::System.Data.DataRowVersion.Original, true, null, "", "", ""));
+            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_Limonauto", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Limonauto", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
             this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@IsNull_News", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "News", global::System.Data.DataRowVersion.Original, true, null, "", "", ""));
             this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_News", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "News", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
-            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@p6", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "News-auto", global::System.Data.DataRowVersion.Original, true, null, "", "", ""));
-            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@p5", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "News-auto", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
+            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@IsNull_Newsauto", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Newsauto", global::System.Data.DataRowVersion.Original, true, null, "", "", ""));
+            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_Newsauto", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Newsauto", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
             this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@IsNull_Car", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Car", global::System.Data.DataRowVersion.Original, true, null, "", "", ""));
             this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_Car", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Car", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
-            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@p9", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Car-auto", global::System.Data.DataRowVersion.Original, true, null, "", "", ""));
-            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@p8", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Car-auto", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
+            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@IsNull_Carauto", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Carauto", global::System.Data.DataRowVersion.Original, true, null, "", "", ""));
+            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_Carauto", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Carauto", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
             this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@IsNull_Pizza", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Pizza", global::System.Data.DataRowVersion.Original, true, null, "", "", ""));
             this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_Pizza", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Pizza", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
-            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@p12", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Pizza-auto", global::System.Data.DataRowVersion.Original, true, null, "", "", ""));
-            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@p11", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Pizza-auto", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
+            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@IsNull_Pizzaauto", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Pizzaauto", global::System.Data.DataRowVersion.Original, true, null, "", "", ""));
+            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_Pizzaauto", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Pizzaauto", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
             this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@IsNull_Ponchik", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Ponchik", global::System.Data.DataRowVersion.Original, true, null, "", "", ""));
             this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_Ponchik", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Ponchik", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
-            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@p15", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Ponchik-auto", global::System.Data.DataRowVersion.Original, true, null, "", "", ""));
-            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@p14", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Ponchik-auto", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
+            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@IsNull_Ponchikauto", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Ponchikauto", global::System.Data.DataRowVersion.Original, true, null, "", "", ""));
+            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_Ponchikauto", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Ponchikauto", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
             this._adapter.InsertCommand = new global::System.Data.SqlClient.SqlCommand();
             this._adapter.InsertCommand.Connection = this.Connection;
-            this._adapter.InsertCommand.CommandText = @"INSERT INTO [dbo].[Table] ([User_Name], [Password], [Balance], [Limon], [Limon-auto], [News], [News-auto], [Car], [Car-auto], [Pizza], [Pizza-auto], [Ponchik], [Ponchik-auto]) VALUES (@User_Name, @Password, @Balance, @Limon, @p1, @News, @p4, @Car, @p7, @Pizza, @p10, @Ponchik, @p13);
-SELECT Id, User_Name, Password, Balance, Limon, [Limon-auto], News, [News-auto], Car, [Car-auto], Pizza, [Pizza-auto], Ponchik, [Ponchik-auto] FROM [Table] WHERE (Id = SCOPE_IDENTITY())";
+            this._adapter.InsertCommand.CommandText = @"INSERT INTO [dbo].[Table] ([User_Name], [Password], [Balance], [Limon], [Limonauto], [News], [Newsauto], [Car], [Carauto], [Pizza], [Pizzaauto], [Ponchik], [Ponchikauto]) VALUES (@User_Name, @Password, @Balance, @Limon, @Limonauto, @News, @Newsauto, @Car, @Carauto, @Pizza, @Pizzaauto, @Ponchik, @Ponchikauto);
+SELECT Id, User_Name, Password, Balance, Limon, Limonauto, News, Newsauto, Car, Carauto, Pizza, Pizzaauto, Ponchik, Ponchikauto FROM [Table] WHERE (Id = SCOPE_IDENTITY())";
             this._adapter.InsertCommand.CommandType = global::System.Data.CommandType.Text;
             this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@User_Name", global::System.Data.SqlDbType.NChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "User_Name", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Password", global::System.Data.SqlDbType.NChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Password", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Balance", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Balance", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Limon", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Limon", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
-            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@p1", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Limon-auto", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Limonauto", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Limonauto", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@News", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "News", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
-            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@p4", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "News-auto", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Newsauto", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Newsauto", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Car", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Car", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
-            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@p7", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Car-auto", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Carauto", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Carauto", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Pizza", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Pizza", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
-            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@p10", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Pizza-auto", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Pizzaauto", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Pizzaauto", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Ponchik", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Ponchik", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
-            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@p13", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Ponchik-auto", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Ponchikauto", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Ponchikauto", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._adapter.UpdateCommand = new global::System.Data.SqlClient.SqlCommand();
             this._adapter.UpdateCommand.Connection = this.Connection;
-            this._adapter.UpdateCommand.CommandText = @"UPDATE [dbo].[Table] SET [User_Name] = @User_Name, [Password] = @Password, [Balance] = @Balance, [Limon] = @Limon, [Limon-auto] = @p1, [News] = @News, [News-auto] = @p4, [Car] = @Car, [Car-auto] = @p7, [Pizza] = @Pizza, [Pizza-auto] = @p10, [Ponchik] = @Ponchik, [Ponchik-auto] = @p13 WHERE (([Id] = @Original_Id) AND ((@IsNull_User_Name = 1 AND [User_Name] IS NULL) OR ([User_Name] = @Original_User_Name)) AND ((@IsNull_Password = 1 AND [Password] IS NULL) OR ([Password] = @Original_Password)) AND ((@IsNull_Balance = 1 AND [Balance] IS NULL) OR ([Balance] = @Original_Balance)) AND ((@IsNull_Limon = 1 AND [Limon] IS NULL) OR ([Limon] = @Original_Limon)) AND ((@p3 = 1 AND [Limon-auto] IS NULL) OR ([Limon-auto] = @p2)) AND ((@IsNull_News = 1 AND [News] IS NULL) OR ([News] = @Original_News)) AND ((@p6 = 1 AND [News-auto] IS NULL) OR ([News-auto] = @p5)) AND ((@IsNull_Car = 1 AND [Car] IS NULL) OR ([Car] = @Original_Car)) AND ((@p9 = 1 AND [Car-auto] IS NULL) OR ([Car-auto] = @p8)) AND ((@IsNull_Pizza = 1 AND [Pizza] IS NULL) OR ([Pizza] = @Original_Pizza)) AND ((@p12 = 1 AND [Pizza-auto] IS NULL) OR ([Pizza-auto] = @p11)) AND ((@IsNull_Ponchik = 1 AND [Ponchik] IS NULL) OR ([Ponchik] = @Original_Ponchik)) AND ((@p15 = 1 AND [Ponchik-auto] IS NULL) OR ([Ponchik-auto] = @p14)));
-SELECT Id, User_Name, Password, Balance, Limon, [Limon-auto], News, [News-auto], Car, [Car-auto], Pizza, [Pizza-auto], Ponchik, [Ponchik-auto] FROM [Table] WHERE (Id = @Id)";
+            this._adapter.UpdateCommand.CommandText = "UPDATE [dbo].[Table] SET [User_Name] = @User_Name, [Password] = @Password, [Balan" +
+                "ce] = @Balance, [Limon] = @Limon, [Limonauto] = @Limonauto, [News] = @News, [New" +
+                "sauto] = @Newsauto, [Car] = @Car, [Carauto] = @Carauto, [Pizza] = @Pizza, [Pizza" +
+                "auto] = @Pizzaauto, [Ponchik] = @Ponchik, [Ponchikauto] = @Ponchikauto WHERE (([" +
+                "Id] = @Original_Id) AND ((@IsNull_User_Name = 1 AND [User_Name] IS NULL) OR ([Us" +
+                "er_Name] = @Original_User_Name)) AND ((@IsNull_Password = 1 AND [Password] IS NU" +
+                "LL) OR ([Password] = @Original_Password)) AND ((@IsNull_Balance = 1 AND [Balance" +
+                "] IS NULL) OR ([Balance] = @Original_Balance)) AND ((@IsNull_Limon = 1 AND [Limo" +
+                "n] IS NULL) OR ([Limon] = @Original_Limon)) AND ((@IsNull_Limonauto = 1 AND [Lim" +
+                "onauto] IS NULL) OR ([Limonauto] = @Original_Limonauto)) AND ((@IsNull_News = 1 " +
+                "AND [News] IS NULL) OR ([News] = @Original_News)) AND ((@IsNull_Newsauto = 1 AND" +
+                " [Newsauto] IS NULL) OR ([Newsauto] = @Original_Newsauto)) AND ((@IsNull_Car = 1" +
+                " AND [Car] IS NULL) OR ([Car] = @Original_Car)) AND ((@IsNull_Carauto = 1 AND [C" +
+                "arauto] IS NULL) OR ([Carauto] = @Original_Carauto)) AND ((@IsNull_Pizza = 1 AND" +
+                " [Pizza] IS NULL) OR ([Pizza] = @Original_Pizza)) AND ((@IsNull_Pizzaauto = 1 AN" +
+                "D [Pizzaauto] IS NULL) OR ([Pizzaauto] = @Original_Pizzaauto)) AND ((@IsNull_Pon" +
+                "chik = 1 AND [Ponchik] IS NULL) OR ([Ponchik] = @Original_Ponchik)) AND ((@IsNul" +
+                "l_Ponchikauto = 1 AND [Ponchikauto] IS NULL) OR ([Ponchikauto] = @Original_Ponch" +
+                "ikauto)));\r\nSELECT Id, User_Name, Password, Balance, Limon, Limonauto, News, New" +
+                "sauto, Car, Carauto, Pizza, Pizzaauto, Ponchik, Ponchikauto FROM [Table] WHERE (" +
+                "Id = @Id)";
             this._adapter.UpdateCommand.CommandType = global::System.Data.CommandType.Text;
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@User_Name", global::System.Data.SqlDbType.NChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "User_Name", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Password", global::System.Data.SqlDbType.NChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Password", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Balance", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Balance", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Limon", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Limon", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
-            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@p1", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Limon-auto", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Limonauto", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Limonauto", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@News", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "News", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
-            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@p4", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "News-auto", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Newsauto", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Newsauto", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Car", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Car", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
-            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@p7", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Car-auto", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Carauto", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Carauto", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Pizza", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Pizza", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
-            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@p10", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Pizza-auto", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Pizzaauto", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Pizzaauto", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Ponchik", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Ponchik", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
-            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@p13", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Ponchik-auto", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Ponchikauto", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Ponchikauto", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_Id", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Id", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@IsNull_User_Name", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "User_Name", global::System.Data.DataRowVersion.Original, true, null, "", "", ""));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_User_Name", global::System.Data.SqlDbType.NChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "User_Name", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
@@ -1375,24 +1384,24 @@ SELECT Id, User_Name, Password, Balance, Limon, [Limon-auto], News, [News-auto],
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_Balance", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Balance", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@IsNull_Limon", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Limon", global::System.Data.DataRowVersion.Original, true, null, "", "", ""));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_Limon", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Limon", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
-            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@p3", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Limon-auto", global::System.Data.DataRowVersion.Original, true, null, "", "", ""));
-            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@p2", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Limon-auto", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@IsNull_Limonauto", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Limonauto", global::System.Data.DataRowVersion.Original, true, null, "", "", ""));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_Limonauto", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Limonauto", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@IsNull_News", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "News", global::System.Data.DataRowVersion.Original, true, null, "", "", ""));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_News", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "News", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
-            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@p6", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "News-auto", global::System.Data.DataRowVersion.Original, true, null, "", "", ""));
-            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@p5", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "News-auto", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@IsNull_Newsauto", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Newsauto", global::System.Data.DataRowVersion.Original, true, null, "", "", ""));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_Newsauto", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Newsauto", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@IsNull_Car", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Car", global::System.Data.DataRowVersion.Original, true, null, "", "", ""));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_Car", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Car", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
-            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@p9", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Car-auto", global::System.Data.DataRowVersion.Original, true, null, "", "", ""));
-            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@p8", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Car-auto", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@IsNull_Carauto", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Carauto", global::System.Data.DataRowVersion.Original, true, null, "", "", ""));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_Carauto", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Carauto", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@IsNull_Pizza", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Pizza", global::System.Data.DataRowVersion.Original, true, null, "", "", ""));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_Pizza", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Pizza", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
-            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@p12", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Pizza-auto", global::System.Data.DataRowVersion.Original, true, null, "", "", ""));
-            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@p11", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Pizza-auto", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@IsNull_Pizzaauto", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Pizzaauto", global::System.Data.DataRowVersion.Original, true, null, "", "", ""));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_Pizzaauto", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Pizzaauto", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@IsNull_Ponchik", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Ponchik", global::System.Data.DataRowVersion.Original, true, null, "", "", ""));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_Ponchik", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Ponchik", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
-            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@p15", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Ponchik-auto", global::System.Data.DataRowVersion.Original, true, null, "", "", ""));
-            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@p14", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Ponchik-auto", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@IsNull_Ponchikauto", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Ponchikauto", global::System.Data.DataRowVersion.Original, true, null, "", "", ""));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_Ponchikauto", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Ponchikauto", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Id", global::System.Data.SqlDbType.Int, 4, global::System.Data.ParameterDirection.Input, 0, 0, "Id", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
         }
         
@@ -1409,8 +1418,8 @@ SELECT Id, User_Name, Password, Balance, Limon, [Limon-auto], News, [News-auto],
             this._commandCollection = new global::System.Data.SqlClient.SqlCommand[1];
             this._commandCollection[0] = new global::System.Data.SqlClient.SqlCommand();
             this._commandCollection[0].Connection = this.Connection;
-            this._commandCollection[0].CommandText = "SELECT Id, User_Name, Password, Balance, Limon, [Limon-auto], News, [News-auto], " +
-                "Car, [Car-auto], Pizza, [Pizza-auto], Ponchik, [Ponchik-auto] FROM dbo.[Table]";
+            this._commandCollection[0].CommandText = "SELECT Id, User_Name, Password, Balance, Limon, Limonauto, News, Newsauto, Car, C" +
+                "arauto, Pizza, Pizzaauto, Ponchik, Ponchikauto FROM dbo.[Table]";
             this._commandCollection[0].CommandType = global::System.Data.CommandType.Text;
         }
         
@@ -1471,7 +1480,7 @@ SELECT Id, User_Name, Password, Balance, Limon, [Limon-auto], News, [News-auto],
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Delete, true)]
-        public virtual int Delete(int Original_Id, string Original_User_Name, string Original_Password, global::System.Nullable<int> Original_Balance, global::System.Nullable<int> Original_Limon, global::System.Nullable<int> p2, global::System.Nullable<int> Original_News, global::System.Nullable<int> p5, global::System.Nullable<int> Original_Car, global::System.Nullable<int> p8, global::System.Nullable<int> Original_Pizza, global::System.Nullable<int> p11, global::System.Nullable<int> Original_Ponchik, global::System.Nullable<int> p14) {
+        public virtual int Delete(int Original_Id, string Original_User_Name, string Original_Password, global::System.Nullable<int> Original_Balance, global::System.Nullable<int> Original_Limon, global::System.Nullable<int> Original_Limonauto, global::System.Nullable<int> Original_News, global::System.Nullable<int> Original_Newsauto, global::System.Nullable<int> Original_Car, global::System.Nullable<int> Original_Carauto, global::System.Nullable<int> Original_Pizza, global::System.Nullable<int> Original_Pizzaauto, global::System.Nullable<int> Original_Ponchik, global::System.Nullable<int> Original_Ponchikauto) {
             this.Adapter.DeleteCommand.Parameters[0].Value = ((int)(Original_Id));
             if ((Original_User_Name == null)) {
                 this.Adapter.DeleteCommand.Parameters[1].Value = ((object)(1));
@@ -1505,9 +1514,9 @@ SELECT Id, User_Name, Password, Balance, Limon, [Limon-auto], News, [News-auto],
                 this.Adapter.DeleteCommand.Parameters[7].Value = ((object)(1));
                 this.Adapter.DeleteCommand.Parameters[8].Value = global::System.DBNull.Value;
             }
-            if ((p2.HasValue == true)) {
+            if ((Original_Limonauto.HasValue == true)) {
                 this.Adapter.DeleteCommand.Parameters[9].Value = ((object)(0));
-                this.Adapter.DeleteCommand.Parameters[10].Value = ((int)(p2.Value));
+                this.Adapter.DeleteCommand.Parameters[10].Value = ((int)(Original_Limonauto.Value));
             }
             else {
                 this.Adapter.DeleteCommand.Parameters[9].Value = ((object)(1));
@@ -1521,9 +1530,9 @@ SELECT Id, User_Name, Password, Balance, Limon, [Limon-auto], News, [News-auto],
                 this.Adapter.DeleteCommand.Parameters[11].Value = ((object)(1));
                 this.Adapter.DeleteCommand.Parameters[12].Value = global::System.DBNull.Value;
             }
-            if ((p5.HasValue == true)) {
+            if ((Original_Newsauto.HasValue == true)) {
                 this.Adapter.DeleteCommand.Parameters[13].Value = ((object)(0));
-                this.Adapter.DeleteCommand.Parameters[14].Value = ((int)(p5.Value));
+                this.Adapter.DeleteCommand.Parameters[14].Value = ((int)(Original_Newsauto.Value));
             }
             else {
                 this.Adapter.DeleteCommand.Parameters[13].Value = ((object)(1));
@@ -1537,9 +1546,9 @@ SELECT Id, User_Name, Password, Balance, Limon, [Limon-auto], News, [News-auto],
                 this.Adapter.DeleteCommand.Parameters[15].Value = ((object)(1));
                 this.Adapter.DeleteCommand.Parameters[16].Value = global::System.DBNull.Value;
             }
-            if ((p8.HasValue == true)) {
+            if ((Original_Carauto.HasValue == true)) {
                 this.Adapter.DeleteCommand.Parameters[17].Value = ((object)(0));
-                this.Adapter.DeleteCommand.Parameters[18].Value = ((int)(p8.Value));
+                this.Adapter.DeleteCommand.Parameters[18].Value = ((int)(Original_Carauto.Value));
             }
             else {
                 this.Adapter.DeleteCommand.Parameters[17].Value = ((object)(1));
@@ -1553,9 +1562,9 @@ SELECT Id, User_Name, Password, Balance, Limon, [Limon-auto], News, [News-auto],
                 this.Adapter.DeleteCommand.Parameters[19].Value = ((object)(1));
                 this.Adapter.DeleteCommand.Parameters[20].Value = global::System.DBNull.Value;
             }
-            if ((p11.HasValue == true)) {
+            if ((Original_Pizzaauto.HasValue == true)) {
                 this.Adapter.DeleteCommand.Parameters[21].Value = ((object)(0));
-                this.Adapter.DeleteCommand.Parameters[22].Value = ((int)(p11.Value));
+                this.Adapter.DeleteCommand.Parameters[22].Value = ((int)(Original_Pizzaauto.Value));
             }
             else {
                 this.Adapter.DeleteCommand.Parameters[21].Value = ((object)(1));
@@ -1569,9 +1578,9 @@ SELECT Id, User_Name, Password, Balance, Limon, [Limon-auto], News, [News-auto],
                 this.Adapter.DeleteCommand.Parameters[23].Value = ((object)(1));
                 this.Adapter.DeleteCommand.Parameters[24].Value = global::System.DBNull.Value;
             }
-            if ((p14.HasValue == true)) {
+            if ((Original_Ponchikauto.HasValue == true)) {
                 this.Adapter.DeleteCommand.Parameters[25].Value = ((object)(0));
-                this.Adapter.DeleteCommand.Parameters[26].Value = ((int)(p14.Value));
+                this.Adapter.DeleteCommand.Parameters[26].Value = ((int)(Original_Ponchikauto.Value));
             }
             else {
                 this.Adapter.DeleteCommand.Parameters[25].Value = ((object)(1));
@@ -1597,7 +1606,7 @@ SELECT Id, User_Name, Password, Balance, Limon, [Limon-auto], News, [News-auto],
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Insert, true)]
-        public virtual int Insert(string User_Name, string Password, global::System.Nullable<int> Balance, global::System.Nullable<int> Limon, global::System.Nullable<int> p1, global::System.Nullable<int> News, global::System.Nullable<int> p4, global::System.Nullable<int> Car, global::System.Nullable<int> p7, global::System.Nullable<int> Pizza, global::System.Nullable<int> p10, global::System.Nullable<int> Ponchik, global::System.Nullable<int> p13) {
+        public virtual int Insert(string User_Name, string Password, global::System.Nullable<int> Balance, global::System.Nullable<int> Limon, global::System.Nullable<int> Limonauto, global::System.Nullable<int> News, global::System.Nullable<int> Newsauto, global::System.Nullable<int> Car, global::System.Nullable<int> Carauto, global::System.Nullable<int> Pizza, global::System.Nullable<int> Pizzaauto, global::System.Nullable<int> Ponchik, global::System.Nullable<int> Ponchikauto) {
             if ((User_Name == null)) {
                 this.Adapter.InsertCommand.Parameters[0].Value = global::System.DBNull.Value;
             }
@@ -1622,8 +1631,8 @@ SELECT Id, User_Name, Password, Balance, Limon, [Limon-auto], News, [News-auto],
             else {
                 this.Adapter.InsertCommand.Parameters[3].Value = global::System.DBNull.Value;
             }
-            if ((p1.HasValue == true)) {
-                this.Adapter.InsertCommand.Parameters[4].Value = ((int)(p1.Value));
+            if ((Limonauto.HasValue == true)) {
+                this.Adapter.InsertCommand.Parameters[4].Value = ((int)(Limonauto.Value));
             }
             else {
                 this.Adapter.InsertCommand.Parameters[4].Value = global::System.DBNull.Value;
@@ -1634,8 +1643,8 @@ SELECT Id, User_Name, Password, Balance, Limon, [Limon-auto], News, [News-auto],
             else {
                 this.Adapter.InsertCommand.Parameters[5].Value = global::System.DBNull.Value;
             }
-            if ((p4.HasValue == true)) {
-                this.Adapter.InsertCommand.Parameters[6].Value = ((int)(p4.Value));
+            if ((Newsauto.HasValue == true)) {
+                this.Adapter.InsertCommand.Parameters[6].Value = ((int)(Newsauto.Value));
             }
             else {
                 this.Adapter.InsertCommand.Parameters[6].Value = global::System.DBNull.Value;
@@ -1646,8 +1655,8 @@ SELECT Id, User_Name, Password, Balance, Limon, [Limon-auto], News, [News-auto],
             else {
                 this.Adapter.InsertCommand.Parameters[7].Value = global::System.DBNull.Value;
             }
-            if ((p7.HasValue == true)) {
-                this.Adapter.InsertCommand.Parameters[8].Value = ((int)(p7.Value));
+            if ((Carauto.HasValue == true)) {
+                this.Adapter.InsertCommand.Parameters[8].Value = ((int)(Carauto.Value));
             }
             else {
                 this.Adapter.InsertCommand.Parameters[8].Value = global::System.DBNull.Value;
@@ -1658,8 +1667,8 @@ SELECT Id, User_Name, Password, Balance, Limon, [Limon-auto], News, [News-auto],
             else {
                 this.Adapter.InsertCommand.Parameters[9].Value = global::System.DBNull.Value;
             }
-            if ((p10.HasValue == true)) {
-                this.Adapter.InsertCommand.Parameters[10].Value = ((int)(p10.Value));
+            if ((Pizzaauto.HasValue == true)) {
+                this.Adapter.InsertCommand.Parameters[10].Value = ((int)(Pizzaauto.Value));
             }
             else {
                 this.Adapter.InsertCommand.Parameters[10].Value = global::System.DBNull.Value;
@@ -1670,8 +1679,8 @@ SELECT Id, User_Name, Password, Balance, Limon, [Limon-auto], News, [News-auto],
             else {
                 this.Adapter.InsertCommand.Parameters[11].Value = global::System.DBNull.Value;
             }
-            if ((p13.HasValue == true)) {
-                this.Adapter.InsertCommand.Parameters[12].Value = ((int)(p13.Value));
+            if ((Ponchikauto.HasValue == true)) {
+                this.Adapter.InsertCommand.Parameters[12].Value = ((int)(Ponchikauto.Value));
             }
             else {
                 this.Adapter.InsertCommand.Parameters[12].Value = global::System.DBNull.Value;
@@ -1701,29 +1710,29 @@ SELECT Id, User_Name, Password, Balance, Limon, [Limon-auto], News, [News-auto],
                     string Password, 
                     global::System.Nullable<int> Balance, 
                     global::System.Nullable<int> Limon, 
-                    global::System.Nullable<int> p1, 
+                    global::System.Nullable<int> Limonauto, 
                     global::System.Nullable<int> News, 
-                    global::System.Nullable<int> p4, 
+                    global::System.Nullable<int> Newsauto, 
                     global::System.Nullable<int> Car, 
-                    global::System.Nullable<int> p7, 
+                    global::System.Nullable<int> Carauto, 
                     global::System.Nullable<int> Pizza, 
-                    global::System.Nullable<int> p10, 
+                    global::System.Nullable<int> Pizzaauto, 
                     global::System.Nullable<int> Ponchik, 
-                    global::System.Nullable<int> p13, 
+                    global::System.Nullable<int> Ponchikauto, 
                     int Original_Id, 
                     string Original_User_Name, 
                     string Original_Password, 
                     global::System.Nullable<int> Original_Balance, 
                     global::System.Nullable<int> Original_Limon, 
-                    global::System.Nullable<int> p2, 
+                    global::System.Nullable<int> Original_Limonauto, 
                     global::System.Nullable<int> Original_News, 
-                    global::System.Nullable<int> p5, 
+                    global::System.Nullable<int> Original_Newsauto, 
                     global::System.Nullable<int> Original_Car, 
-                    global::System.Nullable<int> p8, 
+                    global::System.Nullable<int> Original_Carauto, 
                     global::System.Nullable<int> Original_Pizza, 
-                    global::System.Nullable<int> p11, 
+                    global::System.Nullable<int> Original_Pizzaauto, 
                     global::System.Nullable<int> Original_Ponchik, 
-                    global::System.Nullable<int> p14, 
+                    global::System.Nullable<int> Original_Ponchikauto, 
                     int Id) {
             if ((User_Name == null)) {
                 this.Adapter.UpdateCommand.Parameters[0].Value = global::System.DBNull.Value;
@@ -1749,8 +1758,8 @@ SELECT Id, User_Name, Password, Balance, Limon, [Limon-auto], News, [News-auto],
             else {
                 this.Adapter.UpdateCommand.Parameters[3].Value = global::System.DBNull.Value;
             }
-            if ((p1.HasValue == true)) {
-                this.Adapter.UpdateCommand.Parameters[4].Value = ((int)(p1.Value));
+            if ((Limonauto.HasValue == true)) {
+                this.Adapter.UpdateCommand.Parameters[4].Value = ((int)(Limonauto.Value));
             }
             else {
                 this.Adapter.UpdateCommand.Parameters[4].Value = global::System.DBNull.Value;
@@ -1761,8 +1770,8 @@ SELECT Id, User_Name, Password, Balance, Limon, [Limon-auto], News, [News-auto],
             else {
                 this.Adapter.UpdateCommand.Parameters[5].Value = global::System.DBNull.Value;
             }
-            if ((p4.HasValue == true)) {
-                this.Adapter.UpdateCommand.Parameters[6].Value = ((int)(p4.Value));
+            if ((Newsauto.HasValue == true)) {
+                this.Adapter.UpdateCommand.Parameters[6].Value = ((int)(Newsauto.Value));
             }
             else {
                 this.Adapter.UpdateCommand.Parameters[6].Value = global::System.DBNull.Value;
@@ -1773,8 +1782,8 @@ SELECT Id, User_Name, Password, Balance, Limon, [Limon-auto], News, [News-auto],
             else {
                 this.Adapter.UpdateCommand.Parameters[7].Value = global::System.DBNull.Value;
             }
-            if ((p7.HasValue == true)) {
-                this.Adapter.UpdateCommand.Parameters[8].Value = ((int)(p7.Value));
+            if ((Carauto.HasValue == true)) {
+                this.Adapter.UpdateCommand.Parameters[8].Value = ((int)(Carauto.Value));
             }
             else {
                 this.Adapter.UpdateCommand.Parameters[8].Value = global::System.DBNull.Value;
@@ -1785,8 +1794,8 @@ SELECT Id, User_Name, Password, Balance, Limon, [Limon-auto], News, [News-auto],
             else {
                 this.Adapter.UpdateCommand.Parameters[9].Value = global::System.DBNull.Value;
             }
-            if ((p10.HasValue == true)) {
-                this.Adapter.UpdateCommand.Parameters[10].Value = ((int)(p10.Value));
+            if ((Pizzaauto.HasValue == true)) {
+                this.Adapter.UpdateCommand.Parameters[10].Value = ((int)(Pizzaauto.Value));
             }
             else {
                 this.Adapter.UpdateCommand.Parameters[10].Value = global::System.DBNull.Value;
@@ -1797,8 +1806,8 @@ SELECT Id, User_Name, Password, Balance, Limon, [Limon-auto], News, [News-auto],
             else {
                 this.Adapter.UpdateCommand.Parameters[11].Value = global::System.DBNull.Value;
             }
-            if ((p13.HasValue == true)) {
-                this.Adapter.UpdateCommand.Parameters[12].Value = ((int)(p13.Value));
+            if ((Ponchikauto.HasValue == true)) {
+                this.Adapter.UpdateCommand.Parameters[12].Value = ((int)(Ponchikauto.Value));
             }
             else {
                 this.Adapter.UpdateCommand.Parameters[12].Value = global::System.DBNull.Value;
@@ -1836,9 +1845,9 @@ SELECT Id, User_Name, Password, Balance, Limon, [Limon-auto], News, [News-auto],
                 this.Adapter.UpdateCommand.Parameters[20].Value = ((object)(1));
                 this.Adapter.UpdateCommand.Parameters[21].Value = global::System.DBNull.Value;
             }
-            if ((p2.HasValue == true)) {
+            if ((Original_Limonauto.HasValue == true)) {
                 this.Adapter.UpdateCommand.Parameters[22].Value = ((object)(0));
-                this.Adapter.UpdateCommand.Parameters[23].Value = ((int)(p2.Value));
+                this.Adapter.UpdateCommand.Parameters[23].Value = ((int)(Original_Limonauto.Value));
             }
             else {
                 this.Adapter.UpdateCommand.Parameters[22].Value = ((object)(1));
@@ -1852,9 +1861,9 @@ SELECT Id, User_Name, Password, Balance, Limon, [Limon-auto], News, [News-auto],
                 this.Adapter.UpdateCommand.Parameters[24].Value = ((object)(1));
                 this.Adapter.UpdateCommand.Parameters[25].Value = global::System.DBNull.Value;
             }
-            if ((p5.HasValue == true)) {
+            if ((Original_Newsauto.HasValue == true)) {
                 this.Adapter.UpdateCommand.Parameters[26].Value = ((object)(0));
-                this.Adapter.UpdateCommand.Parameters[27].Value = ((int)(p5.Value));
+                this.Adapter.UpdateCommand.Parameters[27].Value = ((int)(Original_Newsauto.Value));
             }
             else {
                 this.Adapter.UpdateCommand.Parameters[26].Value = ((object)(1));
@@ -1868,9 +1877,9 @@ SELECT Id, User_Name, Password, Balance, Limon, [Limon-auto], News, [News-auto],
                 this.Adapter.UpdateCommand.Parameters[28].Value = ((object)(1));
                 this.Adapter.UpdateCommand.Parameters[29].Value = global::System.DBNull.Value;
             }
-            if ((p8.HasValue == true)) {
+            if ((Original_Carauto.HasValue == true)) {
                 this.Adapter.UpdateCommand.Parameters[30].Value = ((object)(0));
-                this.Adapter.UpdateCommand.Parameters[31].Value = ((int)(p8.Value));
+                this.Adapter.UpdateCommand.Parameters[31].Value = ((int)(Original_Carauto.Value));
             }
             else {
                 this.Adapter.UpdateCommand.Parameters[30].Value = ((object)(1));
@@ -1884,9 +1893,9 @@ SELECT Id, User_Name, Password, Balance, Limon, [Limon-auto], News, [News-auto],
                 this.Adapter.UpdateCommand.Parameters[32].Value = ((object)(1));
                 this.Adapter.UpdateCommand.Parameters[33].Value = global::System.DBNull.Value;
             }
-            if ((p11.HasValue == true)) {
+            if ((Original_Pizzaauto.HasValue == true)) {
                 this.Adapter.UpdateCommand.Parameters[34].Value = ((object)(0));
-                this.Adapter.UpdateCommand.Parameters[35].Value = ((int)(p11.Value));
+                this.Adapter.UpdateCommand.Parameters[35].Value = ((int)(Original_Pizzaauto.Value));
             }
             else {
                 this.Adapter.UpdateCommand.Parameters[34].Value = ((object)(1));
@@ -1900,9 +1909,9 @@ SELECT Id, User_Name, Password, Balance, Limon, [Limon-auto], News, [News-auto],
                 this.Adapter.UpdateCommand.Parameters[36].Value = ((object)(1));
                 this.Adapter.UpdateCommand.Parameters[37].Value = global::System.DBNull.Value;
             }
-            if ((p14.HasValue == true)) {
+            if ((Original_Ponchikauto.HasValue == true)) {
                 this.Adapter.UpdateCommand.Parameters[38].Value = ((object)(0));
-                this.Adapter.UpdateCommand.Parameters[39].Value = ((int)(p14.Value));
+                this.Adapter.UpdateCommand.Parameters[39].Value = ((int)(Original_Ponchikauto.Value));
             }
             else {
                 this.Adapter.UpdateCommand.Parameters[38].Value = ((object)(1));
@@ -1934,30 +1943,30 @@ SELECT Id, User_Name, Password, Balance, Limon, [Limon-auto], News, [News-auto],
                     string Password, 
                     global::System.Nullable<int> Balance, 
                     global::System.Nullable<int> Limon, 
-                    global::System.Nullable<int> p1, 
+                    global::System.Nullable<int> Limonauto, 
                     global::System.Nullable<int> News, 
-                    global::System.Nullable<int> p4, 
+                    global::System.Nullable<int> Newsauto, 
                     global::System.Nullable<int> Car, 
-                    global::System.Nullable<int> p7, 
+                    global::System.Nullable<int> Carauto, 
                     global::System.Nullable<int> Pizza, 
-                    global::System.Nullable<int> p10, 
+                    global::System.Nullable<int> Pizzaauto, 
                     global::System.Nullable<int> Ponchik, 
-                    global::System.Nullable<int> p13, 
+                    global::System.Nullable<int> Ponchikauto, 
                     int Original_Id, 
                     string Original_User_Name, 
                     string Original_Password, 
                     global::System.Nullable<int> Original_Balance, 
                     global::System.Nullable<int> Original_Limon, 
-                    global::System.Nullable<int> p2, 
+                    global::System.Nullable<int> Original_Limonauto, 
                     global::System.Nullable<int> Original_News, 
-                    global::System.Nullable<int> p5, 
+                    global::System.Nullable<int> Original_Newsauto, 
                     global::System.Nullable<int> Original_Car, 
-                    global::System.Nullable<int> p8, 
+                    global::System.Nullable<int> Original_Carauto, 
                     global::System.Nullable<int> Original_Pizza, 
-                    global::System.Nullable<int> p11, 
+                    global::System.Nullable<int> Original_Pizzaauto, 
                     global::System.Nullable<int> Original_Ponchik, 
-                    global::System.Nullable<int> p14) {
-            return this.Update(User_Name, Password, Balance, Limon, p1, News, p4, Car, p7, Pizza, p10, Ponchik, p13, Original_Id, Original_User_Name, Original_Password, Original_Balance, Original_Limon, p2, Original_News, p5, Original_Car, p8, Original_Pizza, p11, Original_Ponchik, p14, Original_Id);
+                    global::System.Nullable<int> Original_Ponchikauto) {
+            return this.Update(User_Name, Password, Balance, Limon, Limonauto, News, Newsauto, Car, Carauto, Pizza, Pizzaauto, Ponchik, Ponchikauto, Original_Id, Original_User_Name, Original_Password, Original_Balance, Original_Limon, Original_Limonauto, Original_News, Original_Newsauto, Original_Car, Original_Carauto, Original_Pizza, Original_Pizzaauto, Original_Ponchik, Original_Ponchikauto, Original_Id);
         }
     }
     
