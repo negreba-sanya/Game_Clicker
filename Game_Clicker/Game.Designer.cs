@@ -106,6 +106,7 @@ namespace Game_Clicker
             this.person_photo = new System.Windows.Forms.PictureBox();
             this.tableTableAdapter = new Game_Clicker.DatabaseDataSetTableAdapters.TableTableAdapter();
             this.panel_upgrade = new System.Windows.Forms.Panel();
+            this.button_bck = new System.Windows.Forms.Button();
             this.button_nw = new System.Windows.Forms.Button();
             this.label5 = new System.Windows.Forms.Label();
             this.button_pch = new System.Windows.Forms.Button();
@@ -116,7 +117,6 @@ namespace Game_Clicker
             this.label3 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
-            this.button_bck = new System.Windows.Forms.Button();
             this.panel_sing_in.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.tableBindingSource)).BeginInit();
@@ -836,6 +836,16 @@ namespace Game_Clicker
             this.panel_upgrade.TabIndex = 56;
             this.panel_upgrade.Visible = false;
             // 
+            // button_bck
+            // 
+            this.button_bck.Location = new System.Drawing.Point(270, 3);
+            this.button_bck.Name = "button_bck";
+            this.button_bck.Size = new System.Drawing.Size(75, 23);
+            this.button_bck.TabIndex = 20;
+            this.button_bck.Text = "Назад";
+            this.button_bck.UseVisualStyleBackColor = true;
+            this.button_bck.Click += new System.EventHandler(this.button_bck_Click);
+            // 
             // button_nw
             // 
             this.button_nw.Location = new System.Drawing.Point(135, 115);
@@ -930,16 +940,6 @@ namespace Game_Clicker
             this.label7.TabIndex = 10;
             this.label7.Text = "Авто-лимон";
             this.label7.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // button_bck
-            // 
-            this.button_bck.Location = new System.Drawing.Point(270, 3);
-            this.button_bck.Name = "button_bck";
-            this.button_bck.Size = new System.Drawing.Size(75, 23);
-            this.button_bck.TabIndex = 20;
-            this.button_bck.Text = "Назад";
-            this.button_bck.UseVisualStyleBackColor = true;
-            this.button_bck.Click += new System.EventHandler(this.button_bck_Click);
             // 
             // Game
             // 

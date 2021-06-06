@@ -415,7 +415,7 @@ namespace Game_Clicker
             {
                 switch (button_sing_in.Text)
                 {
-                    case "Регистрация":
+                    case "Зарегистрироваться":
                         bool success = true;
                         for (int j = 0; j < dataGridView1.RowCount; j++)
                         {
@@ -446,7 +446,7 @@ namespace Game_Clicker
                             TextBox_password.Text = "";
                             label_hello.Text = "Регистрация прошла успешно!";
                             label_sing_in.Text = "Вход в аккаунт";
-                            button_sing_in.Text = "Войти";
+                            button_register.Text = "Войти";
                             button_register.Visible = true;
                         }
                         else
