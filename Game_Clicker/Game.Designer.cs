@@ -830,9 +830,9 @@ namespace Game_Clicker
             this.panel_upgrade.Controls.Add(this.label3);
             this.panel_upgrade.Controls.Add(this.label6);
             this.panel_upgrade.Controls.Add(this.label7);
-            this.panel_upgrade.Location = new System.Drawing.Point(3, 0);
+            this.panel_upgrade.Location = new System.Drawing.Point(0, 0);
             this.panel_upgrade.Name = "panel_upgrade";
-            this.panel_upgrade.Size = new System.Drawing.Size(351, 499);
+            this.panel_upgrade.Size = new System.Drawing.Size(354, 499);
             this.panel_upgrade.TabIndex = 56;
             this.panel_upgrade.Visible = false;
             // 

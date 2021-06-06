@@ -340,7 +340,7 @@ namespace Game_Clicker
         // подключение к базе данных при загрузке формы
         private void Game_Load(object sender, EventArgs e)
         {
-            sqlConnection = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\Alexander\Desktop\Game_Clicker\Game_Clicker\Database.mdf;Integrated Security=True");
+            sqlConnection = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=G:\Александр-ПК\Рабочий стол\Game_Clicker\Game_Clicker\Database.mdf;Integrated Security=True");
             sqlConnection.Open();
             LoadData();
         }
@@ -446,7 +446,7 @@ namespace Game_Clicker
                             TextBox_password.Text = "";
                             label_hello.Text = "Регистрация прошла успешно!";
                             label_sing_in.Text = "Вход в аккаунт";
-                            button_register.Text = "Войти";
+                            button_sing_in.Text = "Войти";
                             button_register.Visible = true;
                         }
                         else
